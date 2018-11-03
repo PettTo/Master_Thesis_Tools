@@ -1,4 +1,4 @@
-package de.tu.bs.cs.isf.pett.headlessincling.core;
+package de.tu_bs.cs.isf.pett.headlessincling.core;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

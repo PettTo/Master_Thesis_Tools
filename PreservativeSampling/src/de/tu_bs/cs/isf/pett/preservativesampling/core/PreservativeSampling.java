@@ -1,4 +1,4 @@
-package de.tu.bs.cs.isf.pett.preservativesampling.core;
+package de.tu_bs.cs.isf.pett.preservativesampling.core;
 
 import de.ovgu.featureide.fm.core.job.monitor.ConsoleMonitor;
 import de.ovgu.featureide.fm.core.job.monitor.IMonitor;

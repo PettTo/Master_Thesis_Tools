@@ -1,4 +1,4 @@
-package de.tu.bs.cs.isf.pett.headlessincling.core;
+package de.tu_bs.cs.isf.pett.preservativesampling.core;
 
 import java.io.File;
 import java.io.IOException;

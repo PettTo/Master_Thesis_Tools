@@ -1,4 +1,4 @@
-package de.tu.bs.cs.isf.pett.preservativesampling.core;
+package de.tu_bs.cs.isf.pett.preservativesampling.core;
 
 import java.util.ArrayList;
 import java.util.Collection;

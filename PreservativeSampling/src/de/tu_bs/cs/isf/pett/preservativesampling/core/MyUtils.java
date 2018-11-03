@@ -1,4 +1,4 @@
-package de.tu.bs.cs.isf.pett.headlessincling.core;
+package de.tu_bs.cs.isf.pett.preservativesampling.core;
 
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -29,6 +29,7 @@ public class MyUtils {
 		final Configuration configuration = new Configuration(featureModel, Configuration.PARAM_NONE);
 		for (final String selection : list) {
 			configuration.setManual(selection, Selection.SELECTED);
+			
 		} 
 		return configuration; 
 	}
@@ -64,6 +65,7 @@ public class MyUtils {
 				fnfEx.printStackTrace();
 				continue; 
 			}
+			
 		}
 		return validConfs; 
 	}
