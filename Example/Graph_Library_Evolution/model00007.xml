@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel>
+		<properties/>
+		<struct>
+			<and abstract="true" mandatory="true" name="GPL">
+				<and abstract="true" name="MainGpl">
+					<or abstract="true" mandatory="true" name="Algorithms">
+						<feature name="Number"/>
+						<feature name="Connected"/>
+						<and abstract="true" name="StrongConnect">
+							<feature mandatory="true" name="Transpose"/>
+							<feature mandatory="true" name="StronglyConnected"/>
+						</and>
+						<feature name="Cycle"/>
+						<feature name="ShortestPath"/>
+					</or>
+					<alt abstract="true" name="Src">
+						<feature name="BFS"/>
+						<feature name="DFS"/>
+					</alt>
+					<alt abstract="true" mandatory="true" name="Wgt">
+						<feature name="Weighted"/>
+						<feature name="Unweighted"/>
+					</alt>
+					<alt abstract="true" mandatory="true" name="Edges">
+						<feature name="Undirected"/>
+						<feature name="Directed"/>
+					</alt>
+				</and>
+			</and>
+		</struct>
+		<constraints>
+			<rule>
+				<imp>
+					<var>Cycle</var>
+					<var>Directed</var>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>ShortestPath</var>
+					<conj>
+						<var>Directed</var>
+						<var>Weighted</var>
+					</conj>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>Connected</var>
+					<conj>
+						<var>Undirected</var>
+						<var>Src</var>
+					</conj>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>StrongConnect</var>
+					<conj>
+						<var>Directed</var>
+						<var>DFS</var>
+					</conj>
+				</imp>
+			</rule>
+		</constraints>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
