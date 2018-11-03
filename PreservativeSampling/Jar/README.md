@@ -1,4 +1,4 @@
-# HeadlessIncLing runnable jar
+# Preservative Sampling runnable jar
 
 - Jar to run Preservative Sampling from command line
 - Takes the following three parameters

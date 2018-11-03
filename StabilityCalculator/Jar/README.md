@@ -1,6 +1,6 @@
-# HeadlessIncLing runnable jar
+# Stability Calculator runnable jar
 
-- Jar to run Preservative Sampling from command line
+- Jar to run Stability Calculator from command line
 - Takes the following three parameters
     - csvPath-------------path to the output file (csv format)
     - pathFM_old----------path to the old feature model
